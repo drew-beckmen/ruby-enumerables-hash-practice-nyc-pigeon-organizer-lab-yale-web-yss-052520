@@ -1,11 +1,23 @@
 def nyc_pigeon_organizer(data)
+  # The new hash we will begin building 
   reorganized_hash = {}
+  
+  #Outer iteration: key = color, gender, lives 
+  # value are hashes associated with color, gender, lives 
   data.each do |key, value|
+    
+    # Inner iteration: attribute - purple, grey, white, brown 
+    # male, female AND subway, central park, library, city hall 
     value.each do |attribute, array_names|
+      
+      #Going through each individual pigeon 
       array_names.each do |name|
+        #If the pigeon has not been added to our new hash, make it a key and have its value be an empty hash. 
         if reorganized_hash[name] == nil 
           reorganized_hash[name] = {}
         end 
+        
+        #The keys of the parameter hash are the keys of the nested hash associated with each 
         if reorganized_hash[name][key] == nil 
           reorganized_hash[name][key] = []
         end 
