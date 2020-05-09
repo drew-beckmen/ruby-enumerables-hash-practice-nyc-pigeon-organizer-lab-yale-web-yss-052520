@@ -9,6 +9,7 @@ def nyc_pigeon_organizer(data)
         if reorganized_hash[name][key] == nil 
           reorganized_hash[name][key] = []
         end 
+        reorganized_hash[name][key] = 
       end 
     
   end 
