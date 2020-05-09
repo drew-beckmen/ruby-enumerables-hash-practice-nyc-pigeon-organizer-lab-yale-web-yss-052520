@@ -12,7 +12,8 @@ def nyc_pigeon_organizer(data)
         reorganized_hash[name][key] << attribute.to_s 
       end 
     end 
-  end 
+  end
+  reorganized_hash
 end
 
 pigeon_data = {
