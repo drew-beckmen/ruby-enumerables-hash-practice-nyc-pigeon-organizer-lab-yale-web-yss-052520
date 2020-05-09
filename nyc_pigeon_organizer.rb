@@ -1,3 +1,5 @@
+require 'pry'
+
 def nyc_pigeon_organizer(data)
   # The new hash we will begin building 
   reorganized_hash = {}
@@ -21,6 +23,8 @@ def nyc_pigeon_organizer(data)
         if reorganized_hash[name][key] == nil 
           reorganized_hash[name][key] = []
         end 
+        #each key of color, gender, and lives is associated with an attribute - a type of color/gender/lives
+        binding.pry
         reorganized_hash[name][key] << attribute.to_s 
       end 
     end 
