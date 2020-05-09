@@ -24,6 +24,7 @@ def nyc_pigeon_organizer(data)
           reorganized_hash[name][key] = []
         end 
         #each key of color, gender, and lives is associated with an attribute - a type of color/gender/lives that gets appended onto the array 
+        # Because of the nested structure of the iteration, attribute is only applicable to name in the associated array. 
         binding.pry
         reorganized_hash[name][key] << attribute.to_s 
       end 
