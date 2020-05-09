@@ -4,7 +4,10 @@ def nyc_pigeon_organizer(data)
     value.each do |attribute, array_names|
       array_names.each do |name|
         if reorganized_hash[name] == nil 
-          reorganized_hash[]
+          reorganized_hash[name] = {}
+        end 
+      end 
+    
   end 
 end
 
