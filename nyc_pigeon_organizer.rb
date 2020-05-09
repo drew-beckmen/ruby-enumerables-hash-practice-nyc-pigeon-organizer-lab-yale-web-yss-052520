@@ -27,6 +27,7 @@ def nyc_pigeon_organizer(data)
         # Because of the nested structure of the iteration, attribute is only applicable to name in the associated array. 
         reorganized_hash[name][key] << attribute.to_s 
       end 
+      binding.pry
     end 
   end
   reorganized_hash
