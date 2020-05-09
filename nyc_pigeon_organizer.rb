@@ -17,7 +17,7 @@ def nyc_pigeon_organizer(data)
           reorganized_hash[name] = {}
         end 
         
-        #The keys of the parameter hash are the keys of the nested hash associated with each 
+        #The keys of the parameter data are the keys of the nested hash associated with each name. Each key in the nested hash has an array as its associated value 
         if reorganized_hash[name][key] == nil 
           reorganized_hash[name][key] = []
         end 
